@@ -3,6 +3,8 @@ import Link from "next/link";
 import ImageSlideshow from "@/components/images/image-slideshow";
 
 export default function Home() {
+    // hello world
+
     return (
         <>
             <header className={classes.header}>
