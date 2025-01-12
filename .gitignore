@@ -1,2 +1,4 @@
 /03-routing-rendering-nextnews-app/.next/
 /03-routing-rendering-nextnews-app/node_modules/
+/03-routing-rendering-nextnews-app/backend/node_modules/
+/03-routing-rendering-nextnews-app/backend/package-lock.json

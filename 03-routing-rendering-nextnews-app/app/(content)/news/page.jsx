@@ -1,11 +1,20 @@
-import {DUMMY_NEWS} from "@/dummy-news";
 import NewsList from "@/components/news-list";
+import {getAllNews} from "@/lib/news";
 
-export default function NewsPage() {
+export default async function NewsPage() {
+    // const response = await fetch('http://localhost:8080/news');
+    // if (!response.ok) {
+    //     throw new Error('Failed to fetch news.');
+    // }
+    //
+    // const news = await response.json();
+
+    const news = await getAllNews();
+
     return (
         <div id={'news'}>
             <h1>News</h1>
-            <NewsList news={DUMMY_NEWS}/>
+            <NewsList news={news}/>
         </div>
     );
 }
